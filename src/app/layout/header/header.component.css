@@ -1,0 +1,14 @@
+.header {
+  text-align: center;
+  background: #000000;
+  color: #fff;
+  padding: 12px;
+}
+
+#logo {
+  width: 50px;
+  border-radius: 50%;
+  vertical-align:middle;
+}
+
+

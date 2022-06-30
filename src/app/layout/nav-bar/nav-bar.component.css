@@ -1,0 +1,22 @@
+.navbar {
+  text-align: center;
+  background: #000000;    
+}
+
+.category {
+  color: #ffffff;
+  /* font-weight: bold; */
+  text-decoration: none;
+}
+
+#cart {
+  color: #2F2504;
+}
+
+a {
+  font-size: larger;
+}
+
+a+a {
+  margin-left: 50px;
+}
