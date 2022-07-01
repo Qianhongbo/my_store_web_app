@@ -10,8 +10,14 @@ export class ProductService {
   private jsonFilePath: string = '../../../assets/data.json';
   constructor(private httpClient: HttpClient) { }
 
-  getProducts(): Observable<Product[]> {
-    console.log("test");
+  // read the data from data.json file
+  getProductsFromLocal(): Observable<Product[]> {
     return this.httpClient.get<Product[]>('../../../assets/data.json');
   }
+
+  // fetch data from fake products api
+  getProductsFromFakeAPI(): Observable<Product[]> {
+    return this.httpClient.get<Product[]>('https://fakestoreapi.com/products');
+  }
+
 }

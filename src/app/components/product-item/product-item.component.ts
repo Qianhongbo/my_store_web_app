@@ -11,19 +11,21 @@ export class ProductItemComponent implements OnInit {
   
   constructor() { 
     this.product = {
+      // * data.json
       // id: 1,
-      // title: '',
+      // name: '',
       // price: 99999,
-      // description: '',
-      // category: '',
-      // image: '',
-      // amount: 0
-
+      // url: '',
+      // description: ''
+      
+      // * fake product api
       id: 1,
-      name: '',
+      title: '',
       price: 99999,
-      url: '',
-      description: ''
+      description: '',
+      category: '',
+      image: '',
+      amount: 1
     };
    }
 

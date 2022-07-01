@@ -1,4 +1,6 @@
-<form class="card prod-card">
+<!-- database.json -->
+
+<!-- <form class="card prod-card">
   <img class="card-img-top" src="{{product.url}}" alt="Card image cap" routerLink="/product/{{product.id}}">
   <div class="card-body">
     <div class="row">
@@ -9,4 +11,14 @@
       <input type="submit" class="btn btn-primary btn-green   col-6" value="Add To Cart"><br>
     </div>
   </div>
-</form>
+</form> -->
+
+
+<!-- fake product api -->
+
+<div class="product-item shadow">
+  <strong>{{ product.title }}</strong>
+  <img class="product-image" src="{{ product.image }}">
+  <p class="price">{{ product.price | currency }}</p>
+  <button class="btn btn-secondary">go to Product</button>
+</div>
