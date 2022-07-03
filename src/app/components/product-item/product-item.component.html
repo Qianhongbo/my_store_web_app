@@ -1,24 +1,12 @@
-<!-- database.json -->
-
-<!-- <form class="card prod-card">
-  <img class="card-img-top" src="{{product.url}}" alt="Card image cap" routerLink="/product/{{product.id}}">
-  <div class="card-body">
-    <div class="row">
-      <h6 class="fw-bold col-7">{{product.name}}</h6>
-      <h6 class="col-5">${{product.price}}</h6>
-    </div>
-    <div class="row justify-content-around">
-      <input type="submit" class="btn btn-primary btn-green   col-6" value="Add To Cart"><br>
-    </div>
+<div class="product-item">
+  <p class="product-title">{{ product.title }}</p>
+  <a [routerLink]="['/products', product.id]">
+    <img class="product-image" src="{{ product.image }}">
+  </a>
+  <div>
+    <p class="price">{{ product.price | currency }}</p>
+    <a [routerLink]="['/products', product.id]">
+      <button class="btn btn-secondary">Product Detail</button>
+    </a>
   </div>
-</form> -->
-
-
-<!-- fake product api -->
-
-<div class="product-item shadow">
-  <strong>{{ product.title }}</strong>
-  <img class="product-image" src="{{ product.image }}">
-  <p class="price">{{ product.price | currency }}</p>
-  <button class="btn btn-secondary">go to Product</button>
 </div>

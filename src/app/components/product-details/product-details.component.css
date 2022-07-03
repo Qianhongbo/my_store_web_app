@@ -1,0 +1,38 @@
+img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.product-details {    
+  display: flex;    
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  align-items: center;
+  padding: 50px;     
+}
+
+.description {
+  display: flex;    
+  flex-direction: column;    
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.modal-body, 
+.modal-footer {
+  background: #d7dfd2;
+  display: flex;
+  align-items: center;
+  justify-content: center;       
+  flex-direction: row;
+  flex-wrap: wrap;        
+}
+
+.quantity {
+  text-align: center;
+}
+
+
